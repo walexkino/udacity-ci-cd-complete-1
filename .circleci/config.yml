@@ -31,6 +31,7 @@ jobs:
           keys:
             - "npm-packages"
       - run: npm audit
+      - run: npm audit fix
 
 workflows:
   my_workflow:

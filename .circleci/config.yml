@@ -30,6 +30,7 @@ jobs:
       - restore_cache:
           keys:
             - "npm-packages"
+      - run: npm install --save-dev jest@28.1.3
       - run: npm audit
       - run: npm audit fix
 

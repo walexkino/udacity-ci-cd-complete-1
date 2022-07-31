@@ -32,8 +32,10 @@ jobs:
             - "npm-packages"
       - run: npm install --save-dev jest@28.1.3
       - run: npm update minimist --depth 3
+      - run: npm update path-parse --depth 3
+      - run: npm update lodash --depth 14
       - run: npm audit
-      - run: npm audit fix
+      
 
 workflows:
   my_workflow:

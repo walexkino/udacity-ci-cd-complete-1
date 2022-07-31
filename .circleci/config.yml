@@ -34,6 +34,7 @@ jobs:
       - run: npm update minimist --depth 3
       - run: npm update path-parse --depth 3
       - run: npm update lodash --depth 14
+      - run: npm update ansi-regex --depth 4 
       - run: npm audit
       
 
